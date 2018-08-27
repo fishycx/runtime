@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1ADCC46E2133FE9D00BD9EFA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADCC46D2133FE9D00BD9EFA /* AppDelegate.m */; };
+		1ADCC4712133FE9D00BD9EFA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADCC4702133FE9D00BD9EFA /* ViewController.m */; };
+		1ADCC4732133FEA000BD9EFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ADCC4722133FEA000BD9EFA /* Assets.xcassets */; };
+		1ADCC4762133FEA000BD9EFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ADCC4742133FEA000BD9EFA /* Main.storyboard */; };
+		1ADCC4792133FEA000BD9EFA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADCC4782133FEA000BD9EFA /* main.m */; };
+		1ADCC4842133FEA000BD9EFA /* MMHAchiveToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADCC4832133FEA000BD9EFA /* MMHAchiveToolTests.m */; };
+		1ADCC48F2133FEA000BD9EFA /* MMHAchiveToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADCC48E2133FEA000BD9EFA /* MMHAchiveToolUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1ADCC4802133FEA000BD9EFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1ADCC4612133FE9C00BD9EFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1ADCC4682133FE9D00BD9EFA;
+			remoteInfo = MMHAchiveTool;
+		};
+		1ADCC48B2133FEA000BD9EFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1ADCC4612133FE9C00BD9EFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1ADCC4682133FE9D00BD9EFA;
+			remoteInfo = MMHAchiveTool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1ADCC4692133FE9D00BD9EFA /* MMHAchiveTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMHAchiveTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ADCC46C2133FE9D00BD9EFA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1ADCC46D2133FE9D00BD9EFA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1ADCC46F2133FE9D00BD9EFA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1ADCC4702133FE9D00BD9EFA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1ADCC4722133FEA000BD9EFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1ADCC4752133FEA000BD9EFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1ADCC4772133FEA000BD9EFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1ADCC4782133FEA000BD9EFA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1ADCC47A2133FEA000BD9EFA /* MMHAchiveTool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MMHAchiveTool.entitlements; sourceTree = "<group>"; };
+		1ADCC47F2133FEA000BD9EFA /* MMHAchiveToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MMHAchiveToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ADCC4832133FEA000BD9EFA /* MMHAchiveToolTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMHAchiveToolTests.m; sourceTree = "<group>"; };
+		1ADCC4852133FEA000BD9EFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1ADCC48A2133FEA000BD9EFA /* MMHAchiveToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MMHAchiveToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ADCC48E2133FEA000BD9EFA /* MMHAchiveToolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMHAchiveToolUITests.m; sourceTree = "<group>"; };
+		1ADCC4902133FEA000BD9EFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1ADCC4662133FE9D00BD9EFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ADCC47C2133FEA000BD9EFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ADCC4872133FEA000BD9EFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1ADCC4602133FE9C00BD9EFA = {
+			isa = PBXGroup;
+			children = (
+				1ADCC46B2133FE9D00BD9EFA /* MMHAchiveTool */,
+				1ADCC4822133FEA000BD9EFA /* MMHAchiveToolTests */,
+				1ADCC48D2133FEA000BD9EFA /* MMHAchiveToolUITests */,
+				1ADCC46A2133FE9D00BD9EFA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1ADCC46A2133FE9D00BD9EFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1ADCC4692133FE9D00BD9EFA /* MMHAchiveTool.app */,
+				1ADCC47F2133FEA000BD9EFA /* MMHAchiveToolTests.xctest */,
+				1ADCC48A2133FEA000BD9EFA /* MMHAchiveToolUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1ADCC46B2133FE9D00BD9EFA /* MMHAchiveTool */ = {
+			isa = PBXGroup;
+			children = (
+				1ADCC46C2133FE9D00BD9EFA /* AppDelegate.h */,
+				1ADCC46D2133FE9D00BD9EFA /* AppDelegate.m */,
+				1ADCC46F2133FE9D00BD9EFA /* ViewController.h */,
+				1ADCC4702133FE9D00BD9EFA /* ViewController.m */,
+				1ADCC4722133FEA000BD9EFA /* Assets.xcassets */,
+				1ADCC4742133FEA000BD9EFA /* Main.storyboard */,
+				1ADCC4772133FEA000BD9EFA /* Info.plist */,
+				1ADCC4782133FEA000BD9EFA /* main.m */,
+				1ADCC47A2133FEA000BD9EFA /* MMHAchiveTool.entitlements */,
+			);
+			path = MMHAchiveTool;
+			sourceTree = "<group>";
+		};
+		1ADCC4822133FEA000BD9EFA /* MMHAchiveToolTests */ = {
+			isa = PBXGroup;
+			children = (
+				1ADCC4832133FEA000BD9EFA /* MMHAchiveToolTests.m */,
+				1ADCC4852133FEA000BD9EFA /* Info.plist */,
+			);
+			path = MMHAchiveToolTests;
+			sourceTree = "<group>";
+		};
+		1ADCC48D2133FEA000BD9EFA /* MMHAchiveToolUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1ADCC48E2133FEA000BD9EFA /* MMHAchiveToolUITests.m */,
+				1ADCC4902133FEA000BD9EFA /* Info.plist */,
+			);
+			path = MMHAchiveToolUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1ADCC4682133FE9D00BD9EFA /* MMHAchiveTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ADCC4932133FEA000BD9EFA /* Build configuration list for PBXNativeTarget "MMHAchiveTool" */;
+			buildPhases = (
+				1ADCC4652133FE9D00BD9EFA /* Sources */,
+				1ADCC4662133FE9D00BD9EFA /* Frameworks */,
+				1ADCC4672133FE9D00BD9EFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MMHAchiveTool;
+			productName = MMHAchiveTool;
+			productReference = 1ADCC4692133FE9D00BD9EFA /* MMHAchiveTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1ADCC47E2133FEA000BD9EFA /* MMHAchiveToolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ADCC4962133FEA000BD9EFA /* Build configuration list for PBXNativeTarget "MMHAchiveToolTests" */;
+			buildPhases = (
+				1ADCC47B2133FEA000BD9EFA /* Sources */,
+				1ADCC47C2133FEA000BD9EFA /* Frameworks */,
+				1ADCC47D2133FEA000BD9EFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1ADCC4812133FEA000BD9EFA /* PBXTargetDependency */,
+			);
+			name = MMHAchiveToolTests;
+			productName = MMHAchiveToolTests;
+			productReference = 1ADCC47F2133FEA000BD9EFA /* MMHAchiveToolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1ADCC4892133FEA000BD9EFA /* MMHAchiveToolUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ADCC4992133FEA000BD9EFA /* Build configuration list for PBXNativeTarget "MMHAchiveToolUITests" */;
+			buildPhases = (
+				1ADCC4862133FEA000BD9EFA /* Sources */,
+				1ADCC4872133FEA000BD9EFA /* Frameworks */,
+				1ADCC4882133FEA000BD9EFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1ADCC48C2133FEA000BD9EFA /* PBXTargetDependency */,
+			);
+			name = MMHAchiveToolUITests;
+			productName = MMHAchiveToolUITests;
+			productReference = 1ADCC48A2133FEA000BD9EFA /* MMHAchiveToolUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1ADCC4612133FE9C00BD9EFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = mamahao;
+				TargetAttributes = {
+					1ADCC4682133FE9D00BD9EFA = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					1ADCC47E2133FEA000BD9EFA = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 1ADCC4682133FE9D00BD9EFA;
+					};
+					1ADCC4892133FEA000BD9EFA = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 1ADCC4682133FE9D00BD9EFA;
+					};
+				};
+			};
+			buildConfigurationList = 1ADCC4642133FE9D00BD9EFA /* Build configuration list for PBXProject "MMHAchiveTool" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1ADCC4602133FE9C00BD9EFA;
+			productRefGroup = 1ADCC46A2133FE9D00BD9EFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1ADCC4682133FE9D00BD9EFA /* MMHAchiveTool */,
+				1ADCC47E2133FEA000BD9EFA /* MMHAchiveToolTests */,
+				1ADCC4892133FEA000BD9EFA /* MMHAchiveToolUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1ADCC4672133FE9D00BD9EFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ADCC4732133FEA000BD9EFA /* Assets.xcassets in Resources */,
+				1ADCC4762133FEA000BD9EFA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ADCC47D2133FEA000BD9EFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ADCC4882133FEA000BD9EFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1ADCC4652133FE9D00BD9EFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ADCC4712133FE9D00BD9EFA /* ViewController.m in Sources */,
+				1ADCC4792133FEA000BD9EFA /* main.m in Sources */,
+				1ADCC46E2133FE9D00BD9EFA /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ADCC47B2133FEA000BD9EFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ADCC4842133FEA000BD9EFA /* MMHAchiveToolTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ADCC4862133FEA000BD9EFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ADCC48F2133FEA000BD9EFA /* MMHAchiveToolUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1ADCC4812133FEA000BD9EFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1ADCC4682133FE9D00BD9EFA /* MMHAchiveTool */;
+			targetProxy = 1ADCC4802133FEA000BD9EFA /* PBXContainerItemProxy */;
+		};
+		1ADCC48C2133FEA000BD9EFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1ADCC4682133FE9D00BD9EFA /* MMHAchiveTool */;
+			targetProxy = 1ADCC48B2133FEA000BD9EFA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1ADCC4742133FEA000BD9EFA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1ADCC4752133FEA000BD9EFA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1ADCC4912133FEA000BD9EFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1ADCC4922133FEA000BD9EFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1ADCC4942133FEA000BD9EFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MMHAchiveTool/MMHAchiveTool.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = S5ANSREG5D;
+				INFOPLIST_FILE = MMHAchiveTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mamhao.MMHAchiveTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1ADCC4952133FEA000BD9EFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MMHAchiveTool/MMHAchiveTool.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = S5ANSREG5D;
+				INFOPLIST_FILE = MMHAchiveTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mamhao.MMHAchiveTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1ADCC4972133FEA000BD9EFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = S5ANSREG5D;
+				INFOPLIST_FILE = MMHAchiveToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mamhao.MMHAchiveToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MMHAchiveTool.app/Contents/MacOS/MMHAchiveTool";
+			};
+			name = Debug;
+		};
+		1ADCC4982133FEA000BD9EFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = S5ANSREG5D;
+				INFOPLIST_FILE = MMHAchiveToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mamhao.MMHAchiveToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MMHAchiveTool.app/Contents/MacOS/MMHAchiveTool";
+			};
+			name = Release;
+		};
+		1ADCC49A2133FEA000BD9EFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = S5ANSREG5D;
+				INFOPLIST_FILE = MMHAchiveToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mamhao.MMHAchiveToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MMHAchiveTool;
+			};
+			name = Debug;
+		};
+		1ADCC49B2133FEA000BD9EFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = S5ANSREG5D;
+				INFOPLIST_FILE = MMHAchiveToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mamhao.MMHAchiveToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MMHAchiveTool;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1ADCC4642133FE9D00BD9EFA /* Build configuration list for PBXProject "MMHAchiveTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ADCC4912133FEA000BD9EFA /* Debug */,
+				1ADCC4922133FEA000BD9EFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1ADCC4932133FEA000BD9EFA /* Build configuration list for PBXNativeTarget "MMHAchiveTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ADCC4942133FEA000BD9EFA /* Debug */,
+				1ADCC4952133FEA000BD9EFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1ADCC4962133FEA000BD9EFA /* Build configuration list for PBXNativeTarget "MMHAchiveToolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ADCC4972133FEA000BD9EFA /* Debug */,
+				1ADCC4982133FEA000BD9EFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1ADCC4992133FEA000BD9EFA /* Build configuration list for PBXNativeTarget "MMHAchiveToolUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ADCC49A2133FEA000BD9EFA /* Debug */,
+				1ADCC49B2133FEA000BD9EFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1ADCC4612133FE9C00BD9EFA /* Project object */;
+}
