@@ -133,8 +133,8 @@
 
 - (void)addOperationToQueue {
     NSOperationQueue *queue = [[NSOperationQueue alloc] init];
-//    NSInvocationOperation *op1 = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(task1) object:nil];
-//    NSInvocationOperation *op2 = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(task2) object:nil];
+    NSInvocationOperation *op1 = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(task1) object:nil];
+    NSInvocationOperation *op2 = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(task2) object:nil];
     NSBlockOperation *op3 = [NSBlockOperation blockOperationWithBlock:^{
         for (int i = 0; i < 2; i++) {
             [NSThread sleepForTimeInterval:3]; // 模拟耗时操作
@@ -149,8 +149,8 @@
     }];
     
     // 3.使用 addOperation: 添加所有操作到队列中
-//    [queue addOperation:op1]; // [op1 start]
-//    [queue addOperation:op2]; // [op2 start]
+    [queue addOperation:op1]; // [op1 start]
+    [queue addOperation:op2]; // [op2 start]
     [queue addOperation:op3]; // [op3 start]
 }
 
