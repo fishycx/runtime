@@ -1,0 +1,13 @@
+platform :ios, "8.0"
+
+def btsURLRequest_pods
+    pod 'Alamofire'
+    pod 'CryptoSwift'
+    pod 'SwiftyJSON'
+end
+
+
+target 'BTSURLRequest' do
+    btsURLRequest_pods
+end
+

@@ -1,0 +1,6 @@
+module Pods_BTSURLRequest {
+  umbrella header "Pods-BTSURLRequest-umbrella.h"
+
+  export *
+  module * { export * }
+}
