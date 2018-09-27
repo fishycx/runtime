@@ -18,7 +18,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 //    [self asyncConcurrent];
-    [self dispatchSignal];
+//    [self dispatchSignal];
+    [self barrier];
 }
 
 /**
@@ -150,6 +151,56 @@
     }
 }
 
+- (void)semaphoreSync {
+    NSLog(@"当前线程%@", [NSThread currentThread]);
+    NSLog(@"semaphoreBegin");
+    dispatch_queue_t concurrencyQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
+}
+
+- (void)barrier {
+    NSLog(@"当前线程%@", [NSThread currentThread]);
+    dispatch_queue_t queue = dispatch_queue_create("com.fishycx.testQueue", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_async(queue, ^{
+        //追加任务1
+        for (int i = 0; i < 2; i++) {
+            [NSThread sleepForTimeInterval:2];
+            NSLog(@"1----当前线程%@", [NSThread currentThread]);
+        }
+    });
+    dispatch_async(queue, ^{
+        //追加任务2
+        for (int i = 0; i < 2; i++) {
+            [NSThread sleepForTimeInterval:2];
+            NSLog(@"2----当前线程%@", [NSThread currentThread]);
+        }
+    });
+    
+    dispatch_barrier_async(queue, ^{
+       //追加任务  barrier
+        for (int i = 0; i < 2; i++) {
+            [NSThread sleepForTimeInterval:2];
+            NSLog(@"barrier----当前线程%@", [NSThread currentThread]);
+        }
+    });
+    dispatch_async(queue, ^{
+        //追加任务3
+        for (int i = 0; i < 2; i++) {
+            [NSThread sleepForTimeInterval:2];
+            NSLog(@"3----当前线程%@", [NSThread currentThread]);
+        }
+    });
+    dispatch_async(queue, ^{
+        //追加任务4
+        for (int i = 0; i < 2; i++) {
+            [NSThread sleepForTimeInterval:2];
+            NSLog(@"4----当前线程%@", [NSThread currentThread]);
+        }
+    });
+
+    
+
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
